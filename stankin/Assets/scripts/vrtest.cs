@@ -12,6 +12,7 @@ public class vrtest : MonoBehaviour
     public int y;
     public int c;
 public int r;
+public int o=10;
     
 
 void Start()
@@ -49,5 +50,14 @@ this.gameObject.SetActive(true);
 Debug.Log("activated");
 }
 }
+
+public void OnTriggerStay(Collider other)
+{
+this.gameObject.SetActive(false);
+}
+
+
+
+
 
 }
